@@ -8,6 +8,13 @@ Feetech FT90R
 - Quick and easy to source on Amazon.ca for cross-country parallel building
 - Adequate performance without breaking the budget ($29.98CAD for 4)
 
+## Speed Control
+Generic 10kΩ Linear Taper Rotary Potentiometers (×3)
+- Linear taper gives a proportional voltage output across the full rotation range, making speed feel intuitive to the user
+- 10kΩ resistance keeps current draw from the 3V3 rail negligible (~0.33 mA per pot at full deflection)
+- Three pots in parallel draw at most ~1 mA total from 3V3 — well within the Pico's 300 mA output limit
+- Standard jellybean value, available at any electronics retailer
+
 ## Microcontroller
 Raspberry Pi Pico
 - Jellybean part (~$4USD from raspberrypi.com)
@@ -49,3 +56,10 @@ Since the bulk capacitor will also handle transients, we can rely on $100-220 \m
 
 #### Servo Noise Abatement
 Expected noise from PWM servo control is in the 10s of MHz range. Adding $100nF$ ceramic capacitors in parallel to the decoupling capacitors will help mitigate high-frequency switching noise from making its way to the power rail.
+
+## Power Supply
+[USB-C PD 65W Wall Adapter](https://www.amazon.ca/dp/B0DL5JJS5T), 5VDC/3A output connected directly to the device
+- Intended for use as an art installation, so the power source needs to be flexible regardless of venue
+- USB-C PD is compatible with a wide range of wall adapters and battery banks, allowing the piece to run from standard wall outlets or a portable battery depending on the display location
+- A proprietary barrel jack wall adapter would tie the installation to a specific plug and power source
+- USB-C PD negotiates 5V as its baseline profile, reliably delivering the required 5V/3A (15W — well within the 65W capacity of the selected adapter)

@@ -1,0 +1,6 @@
+# macOS metadata
+.DS_Store
+
+# MicroPython / Python
+__pycache__/
+*.pyc

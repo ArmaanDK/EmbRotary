@@ -19,3 +19,7 @@ Three potentiometers will connect, in parallel, between the Pico's 3V3 output an
   - [4PCS Feetech FT90R](https://www.amazon.ca/dp/B07JDR2HH5)
 - Microcontroller
   - [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) ([Datasheet](https://pip-assets.raspberrypi.com/categories/610-raspberry-pi-pico/documents/RP-008307-DS-1-pico-datasheet.pdf?disposition=inline))
+
+## Documentation
+- [Hardware Selection](Hardware/HardwareSelection.md) — component choices and rationale
+- [Wiring / Pin Assignments](Hardware/Wiring.md) — GPIO pin assignments and power connections
