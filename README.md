@@ -13,12 +13,6 @@ The hoops will slide into crevices from the top of the box, interfacing with a b
 A USB-C PD power supply (5VDC/3A) powers the device, supplying a 5VDC power rail for the three continuous servos and Raspberry Pi Pico.
 Three potentiometers will connect, in parallel, between the Pico's 3V3 output and GND, with their wipers connected to three ADC pins on the Pico.
 
-## Hardware
-- Servo Motors
-  - [4PCS Feetech FT90R](https://www.amazon.ca/dp/B07JDR2HH5)
-- Microcontroller
-  - [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) ([Datasheet](https://pip-assets.raspberrypi.com/categories/610-raspberry-pi-pico/documents/RP-008307-DS-1-pico-datasheet.pdf?disposition=inline))
-
 ## Documentation
 - [Hardware Selection](Hardware/HardwareSelection.md) — component choices and rationale
 - [Bill of Materials](Hardware/BOM.md) — parts list with quantities

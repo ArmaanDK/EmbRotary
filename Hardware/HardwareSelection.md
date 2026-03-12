@@ -3,8 +3,8 @@ A breakdown of the hardware selected, as well as the rationale for each selectio
 
 ## Motors
 Feetech FT90R
-- Servos rotate as a slower rate than DC motors
-- Can be more easily controlled without needed a complex motor control board handling PWM and transient protection
+- Servos rotate at a slower rate than DC motors
+- Can be more easily controlled without needing a complex motor control board handling PWM and transient protection
 - Quick and easy to source on Amazon.ca for cross-country parallel building
 - Adequate performance without breaking the budget ($29.98CAD for 4)
 
