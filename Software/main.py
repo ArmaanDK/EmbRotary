@@ -67,7 +67,7 @@ def adc_to_pulse_us(adc_val):
     """
     if abs(adc_val - _ADC_CENTER) < ADC_DEADBAND:
         return PULSE_STOP_US
-    return PULSE_MIN_US + adc_val * (PULSE_MAX_US - PULSE_MIN_US) // 65535
+    return PULSE_MIN_US + (adc_val * (PULSE_MAX_US - PULSE_MIN_US)) // 65535
 
 # ---------------------------------------------------------------------------
 # Main loop
