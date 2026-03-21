@@ -10,7 +10,7 @@ from machine import ADC, Pin, PWM
 import time
 
 # ---------------------------------------------------------------------------
-# Configuration — must match main.py
+#                      Configuration (matches main.py)
 # ---------------------------------------------------------------------------
 
 SERVO_FREQ_HZ = 50
@@ -20,7 +20,7 @@ PULSE_MAX_US  = 2000
 ADC_DEADBAND  = 1200
 
 # ---------------------------------------------------------------------------
-# Pin setup
+#                               Pin setup
 # ---------------------------------------------------------------------------
 
 pots   = [ADC(Pin(26)), ADC(Pin(27)), ADC(Pin(28))]
@@ -30,7 +30,7 @@ for s in servos:
     s.freq(SERVO_FREQ_HZ)
 
 # ---------------------------------------------------------------------------
-# Helpers — identical to main.py
+#                      Helpers (identical to main.py)
 # ---------------------------------------------------------------------------
 
 _PERIOD_US  = 1_000_000 // SERVO_FREQ_HZ
@@ -45,7 +45,7 @@ def adc_to_pulse_us(adc_val):
     return PULSE_MIN_US + (adc_val * (PULSE_MAX_US - PULSE_MIN_US)) // 65535
 
 # ---------------------------------------------------------------------------
-# Main loop
+#                                Main loop
 # ---------------------------------------------------------------------------
 
 print("P1      P2      P3      S1      S2      S3")

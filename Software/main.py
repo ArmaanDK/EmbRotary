@@ -2,8 +2,8 @@
 #
 # Three continuous rotation servos (Feetech FT90R) driven by three
 # potentiometers. Each pot controls one servo bidirectionally:
-#   - Pot fully CCW  -> full speed one direction  (~1000us pulse)
-#   - Pot center     -> stopped                   (~1500us pulse)
+#   - Pot fully CCW  -> full speed one direction   (~1000us pulse)
+#   - Pot center     -> stopped                    (~1500us pulse)
 #   - Pot fully CW   -> full speed other direction (~2000us pulse)
 #
 # Wiring:
@@ -16,7 +16,7 @@ from machine import ADC, Pin, PWM
 import time
 
 # ---------------------------------------------------------------------------
-# Configuration
+#                              Configuration
 # ---------------------------------------------------------------------------
 
 SERVO_FREQ_HZ   = 50      # Standard servo PWM frequency
@@ -30,7 +30,7 @@ PULSE_MAX_US    = 2000    # Full speed, other direction
 ADC_DEADBAND    = 1200
 
 # ---------------------------------------------------------------------------
-# Pin setup
+#                                Pin setup
 # ---------------------------------------------------------------------------
 
 pots = [
@@ -49,7 +49,7 @@ for servo in servos:
     servo.freq(SERVO_FREQ_HZ)
 
 # ---------------------------------------------------------------------------
-# Helper functions
+#                             Helper functions
 # ---------------------------------------------------------------------------
 
 _PERIOD_US = 1_000_000 // SERVO_FREQ_HZ   # 20000 us at 50 Hz
@@ -70,7 +70,7 @@ def adc_to_pulse_us(adc_val):
     return PULSE_MIN_US + (adc_val * (PULSE_MAX_US - PULSE_MIN_US)) // 65535
 
 # ---------------------------------------------------------------------------
-# Main loop
+#                                Main loop
 # ---------------------------------------------------------------------------
 
 while True:
