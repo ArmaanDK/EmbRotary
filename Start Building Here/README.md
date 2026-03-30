@@ -17,6 +17,7 @@ Mesh files located in `/Print Files`
  - [`BearingPlug.3mf`](/Start%20Building%20Here/PrintFiles/BearingPlug.3mf) - Acts as sleeve for M2 screw in ball bearing turning it into an axle, 3 per base
  - [`Pinion-Driver.3mf`](/Start%20Building%20Here/PrintFiles/Pinion-Driver.3mf) - The driver pinion gear which is driven by the servo horn, both halves included in this file, 1 per base
  - [`Pinion-Idler.3mf`](/Start%20Building%20Here/PrintFiles/Pinion-Idler.3mf) - The idler pinion gear which has one bearing on either side, both halves included in this file, 1 per base
+ - [`13mm-SpurGear.3mf`](/Start%20Building%20Here/PrintFiles/13mm-SpurGear.3mf) - The spur gear which sits atop the two pinion gears and holds the hoop and embroidery both, 1 per base *(Note: Updated from original 10 mm thickness due to a modelling error with the pinion gear flange distance.)*
 
  ### Hardware
  - `M2 Nut` - 16 per base
